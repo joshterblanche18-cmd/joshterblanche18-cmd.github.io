@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Josh Terblanche | Portfolio</title>
-<meta name="description" content="Three projects by Josh Terblanche: a business dashboard, a gym app demo and a client website for a Cape Town hiking guide.">
+<meta name="description" content="Four projects by Josh Terblanche: a business dashboard, a gym app demo, a client website for a Cape Town hiking guide and a demo website for a local plumber.">
 <style>
 :root {
   --bg: #f6f3ec; --surface: #fffdf8; --ink: #1c1b18; --muted: #5d594f; --line: #dcd6c8;
@@ -52,6 +52,7 @@ h2 { margin: 0 0 8px; font: 700 clamp(32px, 5vw, 46px)/1.1 Georgia, "Times New R
 a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 footer { padding: 32px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
 footer p { margin: 0 0 6px; }
+footer a { color: inherit; }
 </style>
 </head>
 <body>
@@ -59,11 +60,12 @@ footer p { margin: 0 0 6px; }
   <header class="intro">
     <p class="eyebrow">Portfolio</p>
     <h1>Josh Terblanche</h1>
-    <p class="lead">Websites and web apps for small businesses. Here are three projects: a working client site, an interactive app demo and the dashboard I built to run my own work.</p>
+    <p class="lead">Websites and web apps for small businesses. Here are four projects: a working client site, an interactive app demo, the dashboard I built to run my own work and a demo website for a local trade.</p>
     <ul class="jump">
       <li><a href="#dan">Ferrez Guiding</a></li>
       <li><a href="#tally">Tally</a></li>
       <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#kirkgate">Kirkgate</a></li>
     </ul>
   </header>
 
@@ -126,11 +128,33 @@ footer p { margin: 0 0 6px; }
       <figure class="side"><a href="img/dash-invoice.webp"><img src="img/dash-invoice.webp" width="1600" height="1000" loading="lazy" alt="An invoice for a made-up demo client"></a><figcaption>Invoice</figcaption></figure>
     </div>
   </section>
+
+  <section class="project" id="kirkgate" aria-labelledby="kirkgate-title">
+    <div class="head">
+      <div>
+        <h2 id="kirkgate-title">Kirkgate Heating &amp; Plumbing</h2>
+        <p class="tagline">A local plumber's website that takes enquiries and deposits, and answers questions at any hour.</p>
+      </div>
+      <div>
+        <p class="desc">A demo website for a made-up Aberdeen plumbing and heating firm. Visitors can send an enquiry, pay a £25 call-out deposit in test money, or ask a chatbot that only answers from approved facts. If someone mentions gas or fire, ordinary code shows real emergency numbers before any AI runs. Nothing is sold, and the chatbot's spending is capped daily.</p>
+        <ul class="chips"><li>Next.js</li><li>TypeScript</li><li>Stripe test mode</li><li>AI chatbot</li></ul>
+        <a class="button" href="https://demo-plumbers.whynotmedia.workers.dev" rel="noopener">Try the demo</a>
+        <a class="link" href="https://github.com/joshterblanche18-cmd/demo-plumbers" rel="noopener">View the code</a>
+        <p class="note">Kirkgate is fictional, so nobody will come out. Only use made-up details and Stripe's test card.</p>
+      </div>
+    </div>
+    <div class="shots">
+      <figure class="wide"><a href="img/kirkgate-home.webp"><img src="img/kirkgate-home.webp" width="1600" height="1000" loading="lazy" alt="Kirkgate home page with a granite Aberdeen street, a demo banner and gas safety advice"></a></figure>
+      <figure class="side"><a href="img/kirkgate-book.webp"><img src="img/kirkgate-book.webp" width="1600" height="1000" loading="lazy" alt="Form for booking a call-out with a £25 test deposit"></a><figcaption>Test deposit booking</figcaption></figure>
+      <figure class="side"><a href="img/kirkgate-chat.webp"><img src="img/kirkgate-chat.webp" width="1600" height="1000" loading="lazy" alt="Chatbot showing official gas safety advice and the real emergency number"></a><figcaption>Chatbot gas advice</figcaption></figure>
+    </div>
+  </section>
 </main>
 <footer>
   <div class="wrap">
     <p>Built by Josh Terblanche. &copy; 2026 Josh Terblanche. All rights reserved.</p>
     <p>Ferrez Guiding's name, logo and photos belong to Ferrez Guiding and are shown with permission.</p>
+    <p>Kirkgate street photo: <a href="https://commons.wikimedia.org/wiki/File:Skene_Terrace,_Aberdeen_-_geograph.org.uk_-_5437021.jpg" rel="noopener">Skene Terrace, Aberdeen</a> by Bill Harrison, <a href="https://creativecommons.org/licenses/by-sa/2.0" rel="noopener">CC BY-SA 2.0</a>, cropped.</p>
   </div>
 </footer>
 </body>
